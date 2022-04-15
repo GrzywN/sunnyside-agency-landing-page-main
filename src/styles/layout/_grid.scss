@@ -1,0 +1,127 @@
+.grid {
+  &__image {
+    aspect-ratio: calc(375 / 312);
+
+    align-self: center;
+
+    background-size: cover;
+
+    &--transform {
+      background-image: url(../images/mobile/image-transform.jpg);
+    }
+
+    &--stand-out {
+      background-image: url(../images/mobile/image-stand-out.jpg);
+    }
+  }
+
+  &__info {
+    padding: 4em 1.5em;
+  }
+
+  &__paragraph {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  &__card {
+    aspect-ratio: calc(375 / 600);
+
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: flex-end;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3.6875rem;
+
+    &--graphic-design {
+      background-image: url(../images/mobile/image-graphic-design.jpg);
+    }
+    &--photography {
+      background-image: url(../images/mobile/image-photography.jpg);
+    }
+  }
+
+  &__card-paragraph {
+    margin-top: 1.6875rem;
+  }
+
+  @include media('>medium') {
+    display: grid;
+    grid-template-areas:
+      'info-transform img-transform'
+      'img-stand-out info-stand-out'
+      'card-graphic-design card-photography';
+    grid-template-columns: 1fr 1fr;
+    .grid__image--transform {
+      grid-area: img-transform;
+    }
+    .grid__info--transform {
+      grid-area: info-transform;
+    }
+    .grid__image--stand-out {
+      grid-area: img-stand-out;
+    }
+    .grid__info--stand-out {
+      grid-area: info-stand-out;
+    }
+    .grid__card--graphic-design {
+      grid-area: card-graphic-design;
+    }
+    .grid__card--photography {
+      grid-area: card-photography;
+    }
+
+    &__image {
+      max-width: 50vw;
+      aspect-ratio: calc(720 / 600);
+
+      &--transform {
+        background-image: url(../images/desktop/image-transform.jpg);
+      }
+
+      &--stand-out {
+        background-image: url(../images/desktop/image-stand-out.jpg);
+      }
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__info-container {
+      max-width: 27.8125rem;
+    }
+    &__card {
+      aspect-ratio: calc(720 / 600);
+      background-position: center;
+
+      &--graphic-design {
+        background-image: url(../images/desktop/image-graphic-design.jpg);
+      }
+      &--photography {
+        background-image: url(../images/desktop/image-photography.jpg);
+      }
+    }
+    &__card-container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @include media('>large') {
+    &__info-container {
+      margin-bottom: 1px;
+
+      &--left {
+        margin-left: 3.4375rem;
+      }
+
+      &--right {
+        margin-right: 3.4375rem;
+      }
+    }
+  }
+}

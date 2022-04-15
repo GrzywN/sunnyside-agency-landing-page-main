@@ -1,0 +1,199 @@
+.header__heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $font-serif;
+  font-weight: 900;
+  color: $color-white;
+
+  font-size: 2.5rem;
+  letter-spacing: 6.25px;
+
+  @include media('>medium') {
+    font-size: 3rem;
+    letter-spacing: 7.5px;
+  }
+  @include media('>large') {
+    font-size: 3.5rem;
+    letter-spacing: 8.75px;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  font-family: $font-sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+
+  font-size: 1.25rem;
+  letter-spacing: -0.14px;
+  color: $color-dark-grayish-blue;
+  @include media('>medium') {
+    color: $color-white;
+    font-size: 1.1875rem;
+  }
+  @include media('>large') {
+    font-size: 1.125rem;
+    letter-spacing: -0.13px;
+  }
+}
+
+.button-contact {
+  text-transform: uppercase;
+  font-family: $font-serif;
+  font-weight: 700;
+
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  letter-spacing: -0.11px;
+}
+
+.grid {
+  text-align: center;
+
+  &__heading {
+    font-family: $font-serif;
+    font-weight: 900;
+    color: $color-very-dark-desaturated-blue;
+
+    font-size: 2rem;
+    letter-spacing: -0.23px;
+  }
+
+  &__paragraph {
+    font-family: $font-sans-serif;
+    font-weight: 600;
+    color: $color-dark-grayish-blue;
+
+    font-size: 1.125rem;
+    letter-spacing: -0.13px;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-serif;
+    font-weight: 900;
+    color: $color-very-dark-desaturated-blue;
+
+    font-size: 0.9375rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  &__card-heading {
+    text-align: center;
+    font-family: $font-serif;
+    font-weight: 900;
+
+    font-size: 1.75rem;
+    letter-spacing: -0.2px;
+  }
+
+  &__card-paragraph {
+    text-align: center;
+    font-family: $font-sans-serif;
+    font-weight: 600;
+
+    font-size: 1rem;
+    line-height: 27px;
+    letter-spacing: -0.11px;
+  }
+
+  &__card-heading,
+  &__card-paragraph {
+    &--graphic-design {
+      color: $color-dark-desaturated-cyan;
+    }
+    &--photography {
+      color: $color-dark-blue;
+    }
+  }
+
+  @include media('>medium') {
+    text-align: left;
+
+    &__heading {
+      font-size: 2.25rem;
+      letter-spacing: -0.26px;
+      text-align: left;
+    }
+  }
+
+  @include media('>large') {
+    &__heading {
+      font-size: 2.5rem;
+      letter-spacing: -0.29px;
+    }
+  }
+}
+
+.testimonials {
+  &__heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-serif;
+    font-weight: 900;
+    color: $color-grayish-blue;
+
+    font-size: 1rem;
+    letter-spacing: 4px;
+  }
+
+  &__paragraph {
+    text-align: center;
+    font-family: $font-sans-serif;
+    font-weight: 600;
+    color: $color-very-dark-grayish-blue;
+
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: -0.13px;
+  }
+
+  &__author-name {
+    text-align: center;
+    font-family: $font-serif;
+    font-weight: 900;
+    color: $color-very-dark-desaturated-blue;
+
+    font-size: 1.125rem;
+    letter-spacing: -0.13px;
+  }
+
+  &__author-job {
+    text-align: center;
+    font-family: $font-sans-serif;
+    font-weight: 600;
+    color: $color-grayish-blue;
+
+    font-size: 0.875rem;
+    letter-spacing: -0.1px;
+    line-height: 1.5625rem;
+  }
+
+  @include media('>medium') {
+    &__heading {
+      font-size: 1.125rem;
+      letter-spacing: 4.5px;
+    }
+  }
+
+  @include media('>large') {
+    &__heading {
+      font-size: 1.25rem;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+.footer {
+  &__link {
+    text-decoration: none;
+    font-family: $font-sans-serif;
+    font-weight: 600;
+
+    font-size: 1.125rem;
+    letter-spacing: -0.13px;
+    line-height: 25px;
+  }
+}

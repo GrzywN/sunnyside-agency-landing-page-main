@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+html,
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+
+  text-rendering: optimizeSpeed;
+  image-rendering: optimizeSpeed;
+
+  background-color: #3ebfff;
+
+  .background-desktop,
+  .background-mobile {
+    z-index: -1000;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .background-desktop {
+    display: none;
+    height: 50rem;
+  }
+
+  .background-mobile {
+    height: 33.625rem;
+  }
+
+  @include media('>small') {
+    .background-desktop {
+      display: block;
+    }
+    .background-mobile {
+      display: none;
+    }
+  }
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+main {
+  background-color: $color-white;
+}
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

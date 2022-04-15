@@ -1,0 +1,24 @@
+.button-contact {
+  cursor: pointer;
+
+  color: $color-very-dark-desaturated-blue;
+  background-color: $color-yellow;
+
+  width: 140px;
+  height: 56px;
+
+  border: 0;
+  border-radius: 28px;
+
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    color: $color-white;
+    background-color: $color-light-blue;
+  }
+
+  @include media('>medium') {
+    background-color: $color-white;
+  }
+}

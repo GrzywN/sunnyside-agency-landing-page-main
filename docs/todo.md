@@ -1,0 +1,4 @@
+- Backdrop for main nav
+- Aspect-ratio (medium sizes) for `grid__cards`
+- Animations / Scroll trigger
+- Use / forward
