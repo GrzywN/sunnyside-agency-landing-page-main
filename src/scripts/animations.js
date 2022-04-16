@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const animation = {
-  enabled: false,
+  enabled: true,
   repositioning: 200,
   duration: 2,
   timingFunction: 'power1',
