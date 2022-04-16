@@ -13,9 +13,13 @@
   @extend %transition;
 
   &:hover,
-  &:focus {
+  &:focus-within {
     color: $color-white;
     background-color: $color-light-blue;
+  }
+
+  &:active {
+    transform: translateY(0.5em);
   }
 
   @include media('>medium') {
