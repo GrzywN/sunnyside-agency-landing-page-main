@@ -30,7 +30,7 @@
     @extend %transition;
 
     &:hover {
-      color: $color-white;
+      filter: brightness(500%);
     }
   }
 

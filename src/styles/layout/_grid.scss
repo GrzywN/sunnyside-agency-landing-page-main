@@ -55,6 +55,7 @@
       'img-stand-out info-stand-out'
       'card-graphic-design card-photography';
     grid-template-columns: 1fr 1fr;
+
     .grid__image--transform {
       grid-area: img-transform;
     }
@@ -87,6 +88,7 @@
       }
     }
     &__info {
+      padding: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
