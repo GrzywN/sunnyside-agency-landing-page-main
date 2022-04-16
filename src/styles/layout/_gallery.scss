@@ -1,6 +1,7 @@
 .gallery {
   &--mobile {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__image {

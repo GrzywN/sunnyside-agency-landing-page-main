@@ -4,12 +4,19 @@ const hamburger = document.getElementById('hamburger');
 let isMenuExpanded = false;
 let resizeTimer;
 
-const toggleMenu = () => {
+const toggleNavMenu = () => {
+  isMenuExpanded = !isMenuExpanded;
   hamburger.dataset.expanded = `${isMenuExpanded}`;
   hamburger.ariaExpanded = isMenuExpanded;
   nav.dataset.expanded = `${isMenuExpanded}`;
-  isMenuExpanded = !isMenuExpanded;
 };
+
+const closeWhileClickedOutside = (event) => {
+  if (!isMenuExpanded) return;
+  if (isClickedOutside(event)) toggleNavMenu();
+};
+
+const isClickedOutside = (event) => event.target.matches('#nav') || !event.target.closest('#hamburger');
 
 const stopAnimationOnResize = () => {
   document.body.classList.add('resize-animation-stopper');
@@ -19,6 +26,7 @@ const stopAnimationOnResize = () => {
   }, 400);
 };
 
-window.addEventListener('load', toggleMenu);
+hamburger.addEventListener('click', toggleNavMenu);
+document.addEventListener('click', (event) => closeWhileClickedOutside(event));
+
 window.addEventListener('resize', stopAnimationOnResize);
-hamburger.addEventListener('click', toggleMenu);

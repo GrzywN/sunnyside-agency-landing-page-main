@@ -31,17 +31,19 @@
     &__list {
       flex-direction: column;
       justify-content: center;
-      gap: 2em;
 
-      width: calc(100vw - 3rem);
+      gap: 2em;
+      margin-left: 2.5rem;
+      margin-right: 3rem;
+
       height: 329px;
 
       background-color: $color-white;
 
       position: fixed;
       top: 106px;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
+      right: 0;
 
       &::after {
         content: '';

@@ -1,8 +1,12 @@
 $breakpoints: (
-  'small': 375px,
-  'medium': 768px,
-  'large': 1366px,
-  'x-large': 1920px,
+  'small': 23.4375em,
+  // 375px
+  'medium': 48em,
+  // 768px
+  'large': 85.375em,
+  // 1366px
+  'x-large': 120em,
+  // 1920px
 ) !default;
 
 ///
