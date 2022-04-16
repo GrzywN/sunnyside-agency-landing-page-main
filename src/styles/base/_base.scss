@@ -13,6 +13,8 @@ html:focus-within {
 }
 
 body {
+  overflow-x: hidden;
+
   min-height: 100vh;
 
   text-rendering: optimizeSpeed;

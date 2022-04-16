@@ -26,6 +26,7 @@
 
   &__link {
     position: relative;
+    left: 0.75ch;
 
     z-index: 2;
 
@@ -104,6 +105,7 @@
 
   &__card-paragraph {
     margin-top: 1.6875rem;
+    max-width: 21.1875rem;
   }
 
   @include media('>medium') {
@@ -145,6 +147,7 @@
         background-image: url(../images/desktop/image-stand-out.jpg);
       }
     }
+
     &__info {
       padding: 1rem;
       display: flex;
@@ -152,9 +155,16 @@
       justify-content: center;
       align-items: center;
     }
+
     &__info-container {
       max-width: 27.8125rem;
     }
+
+    &__paragraph {
+      margin-top: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
     &__card {
       aspect-ratio: calc(720 / 600);
       background-position: center;

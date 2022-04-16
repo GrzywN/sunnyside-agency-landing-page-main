@@ -8,6 +8,7 @@
   }
   &__link {
     @extend %transition;
+
     &:hover {
       color: darken($color-white, 25%);
     }

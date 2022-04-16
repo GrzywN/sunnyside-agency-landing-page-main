@@ -65,6 +65,7 @@
     color: $color-dark-grayish-blue;
 
     font-size: 1.125rem;
+    line-height: 1.875rem;
     letter-spacing: -0.13px;
   }
 
@@ -81,6 +82,7 @@
   }
 
   &__card-heading {
+    text-transform: capitalize;
     text-align: center;
     font-family: $font-serif;
     font-weight: 900;
@@ -104,6 +106,7 @@
     &--graphic-design {
       color: $color-dark-desaturated-cyan;
     }
+
     &--photography {
       color: $color-dark-blue;
     }
