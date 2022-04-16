@@ -11,8 +11,6 @@
   display: flex;
   flex-direction: column;
 
-  background-color: $color-blue;
-
   .background-desktop,
   .background-mobile {
     z-index: -1000;
