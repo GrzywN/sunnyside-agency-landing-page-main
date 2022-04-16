@@ -73,3 +73,9 @@ main {
     scroll-behavior: auto !important;
   }
 }
+
+@include media('>=x-large') {
+  html {
+    font-size: clamp(1em, 1em + 2vw, 2.5em);
+  }
+}
