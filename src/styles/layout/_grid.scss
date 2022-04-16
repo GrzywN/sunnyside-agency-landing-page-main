@@ -100,6 +100,7 @@
     &__card {
       aspect-ratio: calc(720 / 600);
       background-position: center;
+      padding: 1em;
 
       &--graphic-design {
         background-image: url(../images/desktop/image-graphic-design.jpg);
@@ -124,6 +125,11 @@
       &--right {
         margin-right: 3.4375rem;
       }
+    }
+    &__card {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 3.6875rem;
     }
   }
 }
