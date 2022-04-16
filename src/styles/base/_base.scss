@@ -22,32 +22,6 @@ body {
   image-rendering: optimizeSpeed;
 
   background-color: $color-blue;
-
-  .background-desktop,
-  .background-mobile {
-    z-index: -1000;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .background-desktop {
-    display: none;
-    height: 50rem;
-  }
-
-  .background-mobile {
-    height: 33.625rem;
-  }
-
-  @include media('>small') {
-    .background-desktop {
-      display: block;
-    }
-    .background-mobile {
-      display: none;
-    }
-  }
 }
 
 main {
