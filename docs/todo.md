@@ -1,7 +1,7 @@
-- Triangle fix, navbar fixed for mobile
 - Backdrop for main nav
 - Animations / Scroll trigger
 - Use / forward
-- Aspect-ratio (medium sizes) for `grid__cards`
 - README and other documentation
 - Diffchecker
+
+- Podkreslenia
