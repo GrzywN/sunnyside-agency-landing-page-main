@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 *,
 *::before,
 *::after {
@@ -20,7 +22,7 @@ body {
   text-rendering: optimizeSpeed;
   image-rendering: optimizeSpeed;
 
-  background-color: #3ebfff;
+  background-color: $color-blue;
 
   .background-desktop,
   .background-mobile {

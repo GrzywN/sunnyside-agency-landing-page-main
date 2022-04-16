@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .nav {
   &__list {
     list-style: none;

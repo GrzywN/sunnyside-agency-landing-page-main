@@ -1,9 +1,15 @@
 @charset "UTF-8";
 
-@import 'abstracts/variables', 'abstracts/breakpoints';
+@use 'base/base';
+@use 'base/fonts';
+@use 'base/typography';
 
-@import 'base/base', 'base/fonts', 'base/typography', 'base/animations';
+@use 'layout/header';
+@use 'layout/nav';
+@use 'layout/grid';
+@use 'layout/testimonials';
+@use 'layout/gallery';
+@use 'layout/footer';
 
-@import 'layout/header', 'layout/nav', 'layout/grid', 'layout/testimonials', 'layout/gallery', 'layout/footer';
-
-@import 'components/contact', 'components/hamburger';
+@use 'components/contact';
+@use 'components/hamburger';

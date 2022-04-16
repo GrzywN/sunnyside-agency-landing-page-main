@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .grid {
   &__image {
     aspect-ratio: calc(375 / 312);

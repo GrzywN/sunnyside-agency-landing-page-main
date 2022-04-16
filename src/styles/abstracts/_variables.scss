@@ -1,6 +1,7 @@
 $color-soft-red: hsl(7, 99%, 70%);
 $color-yellow: hsl(51, 100%, 49%);
 $color-light-blue: hsl(200, 99%, 72%);
+$color-blue: #3ebfff;
 $color-dark-desaturated-cyan: hsl(167, 40%, 24%); // (graphic design text)
 $color-dark-blue: hsl(198, 62%, 26%); // (photography text)
 $color-dark-moderate-cyan: hsl(168, 34%, 41%); // (footer)
@@ -11,7 +12,8 @@ $color-dark-grayish-blue: hsl(232, 10%, 55%);
 $color-grayish-blue: hsl(210, 4%, 67%);
 $color-white: hsl(0, 0%, 100%);
 
-$filter-color-dark-cyan: invert(41%) sepia(13%) saturate(1458%) hue-rotate(118deg) brightness(92%) contrast(97%);
+$filter-color-dark-cyan: invert(41%) sepia(13%) saturate(1458%) hue-rotate(118deg) brightness(92%)
+  contrast(97%);
 
 $font-family-barlow: 'Barlow', sans-serif;
 $font-family-fraunces: 'Fraunces', serif;
