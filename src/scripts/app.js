@@ -16,7 +16,8 @@ const closeWhileClickedOutside = (event) => {
   if (isClickedOutside(event)) toggleNavMenu();
 };
 
-const isClickedOutside = (event) => event.target.matches('#nav') || !event.target.closest('#hamburger');
+const isClickedOutside = (event) =>
+  !event.target.classList.contains('nav__list') && event.target.id !== 'hamburger';
 
 const stopAnimationOnResize = () => {
   document.body.classList.add('resize-animation-stopper');
