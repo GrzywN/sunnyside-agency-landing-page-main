@@ -12,7 +12,8 @@ const handleUserClicks = (event) => {
   }
 };
 
-const isClickedOnHamburger = (event) => event.target.id === 'hamburger';
+const isClickedOnHamburger = (event) =>
+  event.target.id === 'hamburger' || event.target.classList.contains('hamburger__bar');
 const isClickedOutsideMenu = (event) => !event.target.classList.contains('nav__list');
 
 const toggleNavMenu = () => {
